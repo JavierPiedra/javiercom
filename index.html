@@ -107,6 +107,32 @@
         color: var(--ink);
       }
 
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 22px;
+      }
+
+      .map-link {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+        border: 1px solid var(--accent);
+        border-radius: 8px;
+        padding: 0 16px;
+        background: var(--accent);
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 1;
+        text-decoration: none;
+      }
+
+      .map-link:focus-visible {
+        outline: 3px solid var(--accent-soft);
+        outline-offset: 2px;
+      }
+
       .section {
         margin-top: 32px;
         padding-top: 30px;
@@ -187,6 +213,11 @@
           grid-template-columns: 1fr;
         }
 
+        .map-link {
+          justify-content: center;
+          width: 100%;
+        }
+
         button {
           width: 100%;
         }
@@ -209,6 +240,17 @@
         javierpiedra.com. Estos son los datos oficiales que yo estoy
         compartiendo.
       </p>
+
+      <div class="actions">
+        <a
+          class="map-link"
+          href="https://maps.app.goo.gl/n5AgP8ucVzffwnkF7"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Cómo llegar al hospital
+        </a>
+      </div>
 
       <section class="section" aria-labelledby="datos-bancarios">
         <h2 id="datos-bancarios">Datos bancarios</h2>
